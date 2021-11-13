@@ -16,8 +16,8 @@ namespace PrintingShop
 		{
 			List<int> listHarga = new List<int>();
 			Console.WriteLine("Program Jonathan Sunaryo");
-			
-		
+
+
 			while (mainMenu == true)
 			{
 				Console.WriteLine("Aplikasi Pembayaran Toko Percetakan Printing");
@@ -31,20 +31,22 @@ namespace PrintingShop
 				Console.WriteLine("");
 				int swc;
 				swc = Convert.ToInt32(Console.ReadLine());
-				Console.WriteLine("");
+				Console.Clear();
+				
 				switch (swc)
 				{
 					case 1:
-						listHarga.Add(BayarTidakWarna());
+						BayarTidakWarna();
+
 						break;
 					case 2:
-						listHarga.Add(BayarWarma());
+						BayarWarna();
 						break;
 					case 3:
-						listHarga.Add(BayarFoto());
+						BayarFoto();
 						break;
 					case 4:
-						listHarga.Add(5000);
+						BayarJilid();
 						break;
 					case 5:
 						Console.WriteLine("Input index list yang ingin dihapus");
@@ -63,19 +65,39 @@ namespace PrintingShop
 						break;
 				}
 				int total = 0;
-				foreach (int x in listHarga)
-				{
+				//foreach (int x in listHarga)
+				//{
 
-					Console.Write("Rp");
-					Console.WriteLine(x);
-					total += x;
+				//	Console.Write("Rp");
+				//	Console.WriteLine(x);
+				//	total += x;
+				//}
+				for (int i = 0; i < ListObject.Count; i++)
+				{
+					
+					Console.WriteLine((i+1)+". "+ ListObject[i].namaPesanan);
+					if (ListObject[i].kodePesanan == 1 || ListObject[i].kodePesanan == 2 || ListObject[i].kodePesanan == 3 || ListObject[i].kodePesanan == 4)
+					{
+						Console.WriteLine("Jumlah Halaman = " + ListObject[i].halaman);
+					}
+					if (ListObject[i].kodePesanan==5 || ListObject[i].kodePesanan == 6 )
+                    {
+                        Console.WriteLine("Jumlah Foto = "+ListObject[i].jumlahFoto);
+                    }
+					Console.WriteLine(" HARGA:Rp" + ListObject[i].harga);
+					total += ListObject[i].harga;
 				}
-				Console.WriteLine("");
-				Console.WriteLine("Harga total ");
-				Console.Write("Rp");
-				Console.WriteLine(total);
+
+				Console.WriteLine("HARGA TOTAL:Rp" + total);
 				Console.WriteLine("");
 			}
+		}
+
+		public static void BayarJilid()
+		{
+			HasilPrint myHasil = new HasilPrint(0, 0, 0);
+			myHasil.HargaJilid();
+			ListObject.Add(myHasil);
 		}
 
 		public static int BayarTidakWarna()
@@ -117,13 +139,13 @@ namespace PrintingShop
 					break;
 			}
 
-			Console.WriteLine("");
+			ClearScreen();
 			Console.WriteLine("List Harga");
 
 			return retur;
 		}
 
-		static int BayarWarma()
+		static int BayarWarna()
 		{
 			Console.WriteLine("Menghitung pembayaran print halaman berwarna");
 			int jenis = 1;
@@ -143,7 +165,10 @@ namespace PrintingShop
 			int halaman = Convert.ToInt32(Console.ReadLine());
 			HasilPrint myHasil = new HasilPrint(jenis, ukuran, halaman);
 			ListObject.Add(myHasil);
+
+			
 			Console.Write("Harga print adalah Rp");
+
 
 			switch (ukuran)
 			{
@@ -159,10 +184,20 @@ namespace PrintingShop
 					Console.WriteLine("Error salah input");
 					break;
 			}
-			Console.WriteLine("");
+
+			ClearScreen();
+			
 			Console.WriteLine("List Harga");
 
 			return retur;
+		}
+
+		public static void ClearScreen()
+        {
+			Console.WriteLine("");
+			Console.WriteLine("Press any key to continue...");
+			Console.ReadKey();
+			Console.Clear();
 		}
 
 		static int BayarFoto()
@@ -184,12 +219,14 @@ namespace PrintingShop
 			int halaman = Convert.ToInt32(Console.ReadLine());
 			HasilPrint myHasil = new HasilPrint(jenis, ukuran, halaman);
 			ListObject.Add(myHasil);
+
+			
 			Console.Write("Harga print adalah Rp");
 
 			Console.WriteLine(myHasil.HargaWarnaA4(myHasil.halaman, myHasil.ukuran, HargaPrint.hargaFoto));
-			retur = myHasil.HargaWarnaA4(myHasil.halaman, myHasil.ukuran);
+			retur = myHasil.HargaWarnaA4(myHasil.halaman, myHasil.ukuran ,HargaPrint.hargaFoto);
 
-			Console.WriteLine("");
+			ClearScreen();
 			Console.WriteLine("List Harga");
 
 			return retur;

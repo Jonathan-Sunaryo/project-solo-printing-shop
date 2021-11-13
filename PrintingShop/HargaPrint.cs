@@ -13,6 +13,7 @@ namespace PrintingShop
         public static int warnaA3 { get; set; }
         public static int warnaA4 { get; set; }
         public static int hargaFoto { get; set; }
+        public static int hargaJilid { get; set; }
 
         static HargaPrint()
         {
@@ -21,6 +22,7 @@ namespace PrintingShop
             warnaA3 = 1200;
             warnaA4 = 1000;
             hargaFoto = 10000;
+            hargaJilid = 5000;
         }
     }
 }
