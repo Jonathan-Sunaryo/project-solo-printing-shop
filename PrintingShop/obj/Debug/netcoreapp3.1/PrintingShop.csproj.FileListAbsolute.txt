@@ -1,0 +1,14 @@
+D:\KERJA\MCC\repos\PrintingShop\PrintingShop\bin\Debug\netcoreapp3.1\PrintingShop.exe
+D:\KERJA\MCC\repos\PrintingShop\PrintingShop\bin\Debug\netcoreapp3.1\PrintingShop.deps.json
+D:\KERJA\MCC\repos\PrintingShop\PrintingShop\bin\Debug\netcoreapp3.1\PrintingShop.runtimeconfig.json
+D:\KERJA\MCC\repos\PrintingShop\PrintingShop\bin\Debug\netcoreapp3.1\PrintingShop.runtimeconfig.dev.json
+D:\KERJA\MCC\repos\PrintingShop\PrintingShop\bin\Debug\netcoreapp3.1\PrintingShop.dll
+D:\KERJA\MCC\repos\PrintingShop\PrintingShop\bin\Debug\netcoreapp3.1\PrintingShop.pdb
+D:\KERJA\MCC\repos\PrintingShop\PrintingShop\obj\Debug\netcoreapp3.1\PrintingShop.csproj.AssemblyReference.cache
+D:\KERJA\MCC\repos\PrintingShop\PrintingShop\obj\Debug\netcoreapp3.1\PrintingShop.GeneratedMSBuildEditorConfig.editorconfig
+D:\KERJA\MCC\repos\PrintingShop\PrintingShop\obj\Debug\netcoreapp3.1\PrintingShop.AssemblyInfoInputs.cache
+D:\KERJA\MCC\repos\PrintingShop\PrintingShop\obj\Debug\netcoreapp3.1\PrintingShop.AssemblyInfo.cs
+D:\KERJA\MCC\repos\PrintingShop\PrintingShop\obj\Debug\netcoreapp3.1\PrintingShop.csproj.CoreCompileInputs.cache
+D:\KERJA\MCC\repos\PrintingShop\PrintingShop\obj\Debug\netcoreapp3.1\PrintingShop.dll
+D:\KERJA\MCC\repos\PrintingShop\PrintingShop\obj\Debug\netcoreapp3.1\PrintingShop.pdb
+D:\KERJA\MCC\repos\PrintingShop\PrintingShop\obj\Debug\netcoreapp3.1\PrintingShop.genruntimeconfig.cache
