@@ -16,8 +16,8 @@ namespace PrintingShop
 		{
 			List<int> listHarga = new List<int>();
 			Console.WriteLine("Program Jonathan Sunaryo");
-			Console.WriteLine("Tes git");
-			Console.WriteLine("Tes git");
+			
+		
 			while (mainMenu == true)
 			{
 				Console.WriteLine("Aplikasi Pembayaran Toko Percetakan Printing");
