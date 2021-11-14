@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\KERJA\\MCC\\repos\\PrintingShop\\PrintingShop\\PrintingShop.csproj",
+      "projectUniqueName": "D:\\KERJA\\MCC\\repos\\PrintingShop\\project-solo-printing-shop\\PrintingShop\\PrintingShop.csproj",
       "projectName": "PrintingShop",
-      "projectPath": "D:\\KERJA\\MCC\\repos\\PrintingShop\\PrintingShop\\PrintingShop.csproj",
+      "projectPath": "D:\\KERJA\\MCC\\repos\\PrintingShop\\project-solo-printing-shop\\PrintingShop\\PrintingShop.csproj",
       "packagesPath": "C:\\Users\\E5473G\\.nuget\\packages\\",
-      "outputPath": "D:\\KERJA\\MCC\\repos\\PrintingShop\\PrintingShop\\obj\\",
+      "outputPath": "D:\\KERJA\\MCC\\repos\\PrintingShop\\project-solo-printing-shop\\PrintingShop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\E5473G\\AppData\\Roaming\\NuGet\\NuGet.Config",
